@@ -1,0 +1,120 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	#about p{font-size: 1em;}
+#baner p{
+	font-size:1.1em;
+}
+#story{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#story p{
+	font-size:1em;
+}
+.navbar{
+	padding:20px 0px 20px 0px;
+	transition: all 0.4s ease;
+}
+.scroll_header{
+	background-color: rgba(0,0,0,0.5);
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid rgba(84, 84, 84, 0.51);
+	font-size:0.8em;
+}
+.navbar-brand{
+	font-size: 2em;
+}
+.col-md-3{
+	height: 500px;
+}
+.text-sizer{
+	margin:0 auto;
+	width: 70vw;
+}
+#baner .container{
+	position: relative;
+	top:25%;
+	text-align: center;
+
+}
+.text{
+	margin:0 auto;
+	padding-top: 10vh;
+}
+#gotoblog a{
+	font-size:0.9em;
+}
+#gotoblog{
+	padding: 10px;
+}
+#about{
+	padding-bottom: 10px;
+}
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}

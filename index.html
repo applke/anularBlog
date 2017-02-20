@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="RU" ng-app="MangoTea">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MangoTea</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cormorant+Garamond|Work+Sans:100&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="mobile.css">
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-controller="myAppCtrl">
+<div class="loading animate-show-hide" ng-show="loadingState"><div class='loading-bar'>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+    <loader></loader>
+</div>
+</div>
+
+    <header id='header'>
+        <div class="container">
+
+            <div class="page-header">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container">
+
+                        <a class="navbar-brand" href="/">#CCC</a>
+                        <navbar></navbar>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div ng-hide="loadingState" >
+    <ng-view autoscroll="true" ></ng-view>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="textfooter"><p>MangoTea 2016</p></div>
+                    <a href='#'><i class='fa fa-vk fa-lg'></i></a><a href='#'><i
+                        class='fa fa-instagram fa-lg'></i></a><a href='#'><i class='fa fa-laptop fa-lg'></i></a></div>
+
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controller/controllers.js"></script>
+<script src="app/directives/directives.js"></script>
+<script src="app/filters/filters.js"></script>
+<script src="app/services/serivices.js"></script>
+</body>
+</html>

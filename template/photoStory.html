@@ -1,0 +1,13 @@
+<div id="photos" ng-mouseleave="activeImage=-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div ng-repeat="element in images|limitTo:4" class="col-md-3 nopadding" ng-mouseover="active($index)"
+                 ng-class="(activeImage===$index)? 'photoStoryHover': (activeImage!==-1)? 'photoStoryHoverFaded':'photoStoryHoverFirstFade'">
+                <div class="text"><p class='imgheading' ng-bind="element.imageTitle"></p>
+                    <p class='imgdsc' ng-bind="element.imageStory"></p>
+                </div>
+                <div style='background-image: url({{element.imageUrl}})' class="backimg"></div>
+            </div>
+        </div>
+    </div>
+</div>
