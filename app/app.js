@@ -14,7 +14,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
     }).when('/blog', {
         templateUrl: "template/blog.html",
         controller: "blogCtrl"
-    })
+    }).otherwise({
+        templateUrl: "template/home.html"
+    });
 }]);
 
 app.run(function ($rootScope, $timeout) {
