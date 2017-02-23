@@ -1,26 +1,45 @@
+require('angular');
+require('angular-route');
+require('angular-animate');
 var app = angular.module("MangoTea", ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
         .when('/', {
-            templateUrl: 'template/home.html'
+            template: require('../template/home.html')
         }).when('/story', {
-        templateUrl: 'template/home.html',
+        template: require('../template/home.html'),
         controller: 'storyCtrl'
     }).when('/video', {
-        templateUrl: 'template/home.html',
+        template: require('../template/home.html'),
         controller: 'videoCtrl'
     }).when('/blog', {
-        templateUrl: "template/blog.html",
+        template: require('../template/blog.html'),
         controller: "blogCtrl"
-    }).otherwise({
-        templateUrl: "template/home.html"
+    }).when('/photo',{
+        template: require('../template/photo.html'),
+        controller:"photoCtrl"
+    })
+        .otherwise({
+        template: require('../template/home.html')
+    });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var px = 100;
+        if (scroll >= px) {
+            $(".navbar").addClass("scroll_header");
+        }
+        if (scroll <= px) {
+            $(".navbar").removeClass("scroll_header").animate("slow");
+        }
     });
 }]);
 
 app.run(function ($rootScope, $timeout) {
     $rootScope.loadingState = false;
+
     $rootScope.$on("$routeChangeStart", function () {
         $rootScope.loadingState = true;
     });
@@ -32,16 +51,7 @@ app.run(function ($rootScope, $timeout) {
 });
 
 
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var px = 100;
-    //>=, not <=
-    if (scroll >= px) {
-        //clearHeader, not clearheader - caps H
-        $(".navbar").addClass("scroll_header");
-    }
-    if (scroll <= px) {
-        //clearHeader, not clearheader - caps H
-        $(".navbar").removeClass("scroll_header").animate("slow");
-    }
-}); //missing );
+require("./controller/controllers.js")(app);
+require("./directives/directives.js")(app);
+require("../bower_components/imagesloaded/imagesloaded");
+require ('../less/index.less');

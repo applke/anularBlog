@@ -10,11 +10,11 @@
     <!-- Bootstrap CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cormorant+Garamond|Work+Sans:100&amp;subset=cyrillic"
           rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome.min.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
 
 
@@ -74,6 +74,11 @@
                     <div class="container">
 
                         <a class="navbar-brand" href="/">#CCC</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <navbar></navbar>
                     </div>
                 </nav>
@@ -81,7 +86,7 @@
         </div>
     </header>
 <div ng-hide="loadingState" >
-    <ng-view autoscroll="true" ></ng-view>
+    <ng-view autoscroll="true"></ng-view>
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -97,17 +102,11 @@
 <!-- jQuery -->
 
 <!-- Bootstrap JavaScript -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="app/app.js"></script>
-<script src="app/controller/controllers.js"></script>
-<script src="app/directives/directives.js"></script>
-<script src="app/filters/filters.js"></script>
-<script src="app/services/serivices.js"></script>
+<script src="/dist/js/build.js"></script>
 </body>
 </html>

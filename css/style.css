@@ -47,7 +47,7 @@ color:white;}
 	font-size: 90%;
 	text-transform: uppercase;
 	margin-left:50px;
-	
+
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color:rgb(185, 166, 22);
@@ -55,11 +55,11 @@ color:white;}
 
 #header{
 	position: absolute;
-	
+
 }
 #baner{
 	height: 100vh;
-	background: transparent url(back_gradient.jpg) center bottom no-repeat;
+	background: transparent url(/images/back_gradient.jpg) center bottom no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -103,7 +103,7 @@ color:white;}
 }
 #about::after{
 	content: "";
-	background:url(stardust.png);
+	background:url(../images/stardust.png);
 	opacity: 0.3;
 	top: 0;
 	left: 0;
@@ -133,7 +133,7 @@ color:white;}
 
 #story::after{
 	content: "";
-	background:url(seigaiha.png);
+	background:url(../images/seigaiha.png);
 	opacity: 0.9;
 	top: 0;
 	left: 0;
@@ -295,7 +295,6 @@ margin-top: 40px;
 }
 
 #posts{
-	display: block;
 	position: relative;
 	margin-top:30vh;
 	overflow: hidden;
@@ -307,7 +306,7 @@ margin-top: 40px;
 }
 #posts:after{
 	content: "";
-	background:url(stardust.png) repeat;
+	background:url(../images/stardust.png) repeat;
 	opacity: 0.3;
 	top: 0;
 	left: 0;
@@ -336,7 +335,7 @@ p{font-family: 'Cormorant', serif;}
 	width: 100vw;
 	z-index: -1;
 	top:0;
-	background: transparent url(back_gradient.jpg) center bottom no-repeat;
+	background: transparent url(/images/back_gradient.jpg) center bottom no-repeat;
 	background-size: cover;
 }
 
@@ -362,7 +361,7 @@ p{font-family: 'Cormorant', serif;}
 	transform: scale(1.3);
 }
 
-span, loader {
+loader {
 	motion-path: path("M67.3,17.8c0-9.3-4.8-14.5-13.8-14.5C41.9,3.2,35.7,17,35.7,17s-6.2,13.8-17.8,13.8C10,30.8,4,25.5,4,17.7 C4, 9.6, 10, 3.2, 17.8, 3.2C29.4, 3.2, 35.7, 17, 35.7, 17s6.2, 13.8, 17.8, 13.8C61.4, 30.8, 67.3, 24.8, 67.3, 17.8z");
 	position: absolute;
 }
@@ -544,4 +543,54 @@ loader:nth-of-type(35) {
 	}
 }
 
+#ph{
+	width: 100%;
+}
 
+.photo-wrapper {
+	float: left;
+	height: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 10px;
+	background: rgba(255,255,255,.1);
+	width: 100%;
+
+}
+
+#img-post{
+	position: relative;
+	margin-top:30vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+#img-post:after{
+	content: "";
+	background:url(../images/stardust.png) repeat;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -3;
+}
+#img-post p{
+	margin-top: 10px;
+	color:#ccc;
+	font-size:1.3em;
+	text-align: center;
+}
+#img-post span{
+	color:#ccc;
+}
+#img-post .col-md-6{
+	padding-left:5px;
+	padding-right: 5px;
+
+}
